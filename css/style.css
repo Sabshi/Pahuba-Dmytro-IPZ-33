@@ -1,30 +1,43 @@
+:root {
+    --black: #212121;
+    --white: #ffffff;
+    --footer_grey: #2f303a;
+    --blue: #2196f3;
+    --grey: #757575;
+    --blue_dark:#1f73b5;
+}
 a.info,
 a.navigate,
-.logo{
+.logo,
+a{
     text-decoration: none;
     color: #212121;
 }
+
 a.info:hover,
 a.info:focus,
 a.navigate:active,
 a.navigate:focus,
 a.navigate:hover{
-    color: #2196F3;
+    color: var(--blue);
     white-space: nowrap;
 }
 button:active,
 button:hover,
 button:focus{
-    background-color: #2196F3;
-    color:#FFFFFF;
+    background-color: var(--blue);
+    color:var(--white);
     cursor: pointer
+}
+.button:hover{
+background-color: var(--blue_dark);
 }
 body{
     font-family:"Roboto","Raleway","Times New Roman",sans-serif;
-    color: #212121
+    color: var(--black);
 }
 .blue{
-    color:#2196F3;
+    color:var(--blue);
 }
 
 a,p,.inform h3{
@@ -33,7 +46,7 @@ a,p,.inform h3{
 h1{
     font-size: 44px;
     line-height: 1.364;
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 900;
 }
 .buton{
@@ -65,27 +78,37 @@ h2{
 .button{
     font-size: 16px;
     line-height: 1.875;
+    background-color:var(--blue);
+    color: var(--white);
 }
 a,p{
-    color:#757575;
+    color:var(--grey);
 }
 .baner{
-    background-color: #2F303A;
+    background-color: var(--footer_grey);
 }
 footer{
-    background-color: #2F303A;
+    background-color: var(--footer_grey);
 }
 address p{
-    color:#FFFFFF;
+    color:var(--white);
 }
 header{
     line-height: 1.172;
     font-weight: 500;
 }
-header .logo {
+header .logo,
+footer .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    white-space: nowrap;
+    font-size: 26px;
 }
-
-
+footer .logo{
+    color:var(--white);
+}
+li{
+     list-style-type: none;
+}
+button{
+    border: none;
+}
