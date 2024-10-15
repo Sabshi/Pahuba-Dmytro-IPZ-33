@@ -8,8 +8,7 @@
 }
 a.info,
 a.navigate,
-.logo,
-a{
+.logo{
     text-decoration: none;
     color: #212121;
 }
@@ -35,7 +34,7 @@ button:focus{
 background-color: var(--blue_dark);
 }
 body{
-    font-family:"Roboto","Raleway","Times New Roman",sans-serif;
+    font-family:"Roboto","Raleway",sans-serif;
     color: var(--black);
 }
 .blue{
@@ -50,6 +49,19 @@ h1{
     line-height: 1.364;
     color: var(--white);
     font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.services h3{
+    letter-spacing: 0.06em;
+}
+.develoreps h3{
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+}
+a,p{
+    letter-spacing: 0.03em;
 }
 .buton{
     font-size: 16px;
@@ -125,7 +137,7 @@ section{
     border-radius: 5px;
     cursor: pointer;
 }
-a,p{
+ main a, main p{
     color:var(--grey);
 }
 .baner {
@@ -146,9 +158,15 @@ a,p{
 }
 footer{
     background-color: var(--footer_grey);
+   text-decoration: none;
 }
 address{
     margin: 28px 0 0 215px ;
+    font-style: normal;
+}
+address a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 address p{
     color:var(--white);
@@ -178,6 +196,7 @@ button{
 }
 .menu{
     display: flex;
+    letter-spacing: 0.02em;
 }
 .logo{
     margin: 24px 93px 25px 215px;
@@ -190,6 +209,11 @@ header ul{
 }
 .nummail{
     margin:32px auto 32px 304px ;
+    letter-spacing: 0.02em;
+    
+}
+.nummail a{
+    color: var(--grey);
 }
 .nummail .info{
     margin-right: 40px;
