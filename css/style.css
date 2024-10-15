@@ -14,6 +14,10 @@ a.navigate,
 }
 .conteiner{
     width:1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 a.info:hover,
 a.info:focus,
@@ -55,11 +59,34 @@ h1{
 .services h3{
     letter-spacing: 0.06em;
 }
-.develoreps h3{
+.dev-team{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;  
+    justify-content: center;
+    gap: 30px;
+}
+.dev-team:last-child{
+    margin-left:0px;
+}
+.develoreps{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.develoreps h2{
     font-weight: 500;
     letter-spacing: 0.03em;
-    font-size: 16px;
+    font-size: 36px;
 }
+.developer {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 270px;
+  }
 a,p{
     letter-spacing: 0.03em;
 }
@@ -88,11 +115,7 @@ h2{
 }
 .inform p{
     line-height: 1.714;
-}
-.inform{
-    margin: auto 215px auto 215px;
-    width: 73%;
-}   
+}  
 .about {
     display: flex;
     padding: 0;
@@ -107,7 +130,6 @@ h2{
     width: 270px;
 }
 .img {
-    margin: 0 215px; 
     text-align: center;
 }
 .img h2 {
@@ -124,7 +146,8 @@ h2{
     margin-left: 0; 
 }
 section{
-    margin: 94px auto 94px auto;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 .button {
     font-size: 16px;
@@ -158,19 +181,24 @@ section{
 }
 footer{
     background-color: var(--footer_grey);
-   text-decoration: none;
+     text-decoration: none;
+     height: 251px;
 }
 address{
-    margin: 28px 0 0 215px ;
+    margin: 28px 0 60px 215px ;
     font-style: normal;
 }
 address a{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    margin-bottom: 12px;
 }
 address p{
     color:var(--white);
 }
+footer address ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
 header{
     line-height: 1.172;
     font-weight: 500;
@@ -210,7 +238,6 @@ header ul{
 .nummail{
     margin:32px auto 32px 304px ;
     letter-spacing: 0.02em;
-    
 }
 .nummail a{
     color: var(--grey);
