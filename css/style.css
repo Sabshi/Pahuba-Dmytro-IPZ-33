@@ -208,6 +208,7 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center; 
+    margin-top: 0px;
 }
 
 .ban h1{
@@ -222,7 +223,12 @@ footer{
      display: flex;
      flex-direction: column;
 }
-
+footer p{
+    margin: 0px;
+}
+footer li {
+    margin: 12px auto;
+}
 address{
     margin: 28px 0px 0px 215px ;
     font-style: normal;
