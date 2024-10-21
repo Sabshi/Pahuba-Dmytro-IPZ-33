@@ -8,12 +8,17 @@
 }
 a.info,
 a.navigate,
-.logo,
-a{
+.logo{
     text-decoration: none;
     color: #212121;
 }
-
+.conteiner{
+    width:1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 a.info:hover,
 a.info:focus,
 a.navigate:active,
@@ -29,11 +34,14 @@ button:focus{
     color:var(--white);
     cursor: pointer
 }
+nav{
+    margin-left:93px;
+}
 .button:hover{
 background-color: var(--blue_dark);
 }
 body{
-    font-family:"Roboto","Raleway","Times New Roman",sans-serif;
+    font-family:"Roboto","Raleway",sans-serif;
     color: var(--black);
 }
 .blue{
@@ -48,16 +56,82 @@ h1{
     line-height: 1.364;
     color: var(--white);
     font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.services h3{
+    letter-spacing: 0.06em;
+}
+.dev-team{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;  
+    justify-content: center;
+    gap: 30px;
+}
+.dev-team:last-child{
+    margin-left:0px;
+}
+.develoreps{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.develoreps h2{
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+}
+.developer {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 270px;
+  }
+a,p{
+    letter-spacing: 0.03em;
 }
 .buton{
     font-size: 16px;
     line-height: 1.625;
     font-weight: 500;
+    padding: 6px 22px 6px 22px;
+    border-radius: 5px;
+}
+.knopka{
+    display: flex;
+    justify-content: center;
+}
+.knopka li {
+    margin-right: 8px;
+}
+.buton:last-child{
+    margin-right: 0px;
+}
+
+.tov {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1170px; 
+    grid-gap: 30px;
+    padding-bottom: 94px;
+}
+
+.tov li {
+    display: block;
+    max-width: 370px;  
 }
 h2{
     font-size: 36px;
     line-height: 1.173;
     font-weight: 700;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .services p{
     font-size: 16px;
@@ -74,28 +148,105 @@ h2{
 }
 .inform p{
     line-height: 1.714;
+}  
+.about {
+    display: flex;
+    padding: 0;
 }
-.button{
+.about li:last-child {
+    margin-right: 0; 
+}
+.about li {
+    margin-right: 30px;
+}
+.about p{
+    width: 270px;
+}
+.img {
+    text-align: center;
+}
+.img h2 {
+    margin-bottom: 50px;
+}
+.img ul {
+    display: flex;
+    padding: 0;
+}
+footer ul{
+    padding: 0;
+}
+.img li {
+    margin-left: 30px; 
+}
+.img li:first-child {
+    margin-left: 0; 
+}
+section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.button {
     font-size: 16px;
     line-height: 1.875;
-    background-color:var(--blue);
+    background-color: var(--blue);
     color: var(--white);
+    width: 200px;
+    height: 50px;
+    margin-top: 30px; 
+    border-radius: 5px;
+    cursor: pointer;
 }
-a,p{
+ main a, main p{
     color:var(--grey);
 }
-.baner{
+.baner {
     background-color: var(--footer_grey);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin-top: 0px;
+}
+
+.ban h1{
+    width: 696px;
+    height: 120px;
+    margin: auto 452px auto 452px;
 }
 footer{
     background-color: var(--footer_grey);
+     text-decoration: none;
+     height: 251px;
+     display: flex;
+     flex-direction: column;
+}
+footer p{
+    margin: 0px;
+}
+footer li {
+    margin: 12px auto;
+}
+address{
+    margin: 28px 0px 0px 215px ;
+    font-style: normal;
+}
+address a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 address p{
     color:var(--white);
 }
+
 header{
     line-height: 1.172;
     font-weight: 500;
+    display: flex;
+    width: 100%;
+    height: 80px;
 }
 header .logo,
 footer .logo{
@@ -103,12 +254,48 @@ footer .logo{
     font-weight: 700;
     font-size: 26px;
 }
+header .logo{
+    margin-top:25px;
+    margin-left: auto;
+}
 footer .logo{
+    margin-top: 60px;
     color:var(--white);
+    margin-left:215px;
+}
+.conteinerl{
+    width: 100%;
 }
 li{
      list-style-type: none;
 }
 button{
     border: none;
+}
+.buttons{
+    display: flex;
+}
+.menu{
+    display: flex;
+    letter-spacing: 0.02em;
+    margin:32px auto;
+}
+header.logo{
+    margin: 24px 93px 25px 215px;
+}
+.menu a {
+    margin-right:50px;
+}
+header ul{
+    margin: 32px auto 32px auto;
+}
+.nummail{
+    margin:32px auto 32px 304px ;
+    letter-spacing: 0.02em;
+}
+.nummail a{
+    color: var(--grey);
+}
+.nummail .info{
+    margin-right: 40px;
 }
