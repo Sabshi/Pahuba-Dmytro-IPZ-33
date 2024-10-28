@@ -5,6 +5,7 @@
     --blue: #2196f3;
     --grey: #757575;
     --blue_dark:#1f73b5;
+    --like_white: #f5f4fa;
 }
 a.info,
 a.navigate,
@@ -51,6 +52,51 @@ button:focus{
 }
 nav{
     margin-left:93px;
+}
+.about-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--like_white);
+    border-radius: 4px;
+}
+.icon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.icon li{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.social:hover,
+.social:focus {
+    background-color: var(--blue);
+    fill: var(--white);
+    outline: none;
+}
+
+.social:hover svg{
+    fill: var(--white);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--icon);
+    fill: currentColor;
+    transition: all 300ms ease-in-out;
+}
+.social:last-child{
+    margin-right: 0px;
 }
 .button:hover{
 background-color: var(--blue_dark);
@@ -228,15 +274,15 @@ section{
     color:var(--grey);
 }
 .baner {
-    background-image: url("images/background.png");
-    width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 600px;
     display: flex;
-    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center; 
-    margin-top: 0px;
 }
 
 .ban h1{
