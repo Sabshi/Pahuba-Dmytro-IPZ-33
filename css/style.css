@@ -6,6 +6,7 @@
     --grey: #757575;
     --blue_dark:#1f73b5;
     --like_white: #f5f4fa;
+    --icon: #afb1b8;
 }
 a.info,
 a.navigate,
@@ -71,7 +72,6 @@ nav{
 .icon li{
     width: 44px;
     height: 44px;
-    margin-right: 10px;
 }
 .social:hover,
 .social:focus {
