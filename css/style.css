@@ -6,7 +6,7 @@
     --grey: #757575;
     --blue_dark:#1f73b5;
     --like_white: #f5f4fa;
-    --icon: #afb1b8;
+    --icons: #afb1b8;
 }
 a.info,
 a.navigate,
@@ -76,28 +76,21 @@ nav{
 .social:hover,
 .social:focus {
     background-color: var(--blue);
-    fill: var(--white);
+    color: var(--white);
     outline: none;
-}
-
-.social:hover svg{
-    fill: var(--white);
-}
-
-.social {
+    }
+.social{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    color: var(--icon);
+    color: var(--icons);
     fill: currentColor;
     transition: all 300ms ease-in-out;
 }
-.social:last-child{
-    margin-right: 0px;
-}
+
 .button:hover{
 background-color: var(--blue_dark);
 }
@@ -303,6 +296,9 @@ footer li {
 }
 footer li:last-child{
     margin: 0px auto;
+}
+address{
+    font-style: normal;
 }
 address a{
     color: rgba(255, 255, 255, 0.6);
